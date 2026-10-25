@@ -1,0 +1,12 @@
+title: AI 趋势日报
+description: AI 新词、TikTok 梗与 AI 新闻的每日公开报告
+lang: zh-CN
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+relative_links:
+  enabled: true
+  collections: false
+exclude:
+  - README.md
