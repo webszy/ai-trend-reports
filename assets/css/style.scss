@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 手机端：防止 iOS 滚动时自动缩放中文字号，宽表格改为横向滑动 */
+html, body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+p, li, td, th { word-break: break-word; overflow-wrap: anywhere; }
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+pre, code { white-space: pre-wrap; word-break: break-all; }
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 960px) {
+  .wrapper { width: auto; padding: 16px; }
+  header, section, footer { float: none; position: static; width: auto; }
+  section { padding: 0; }
+  body, p, li, td, th { font-size: 16px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 18px; }
+}
